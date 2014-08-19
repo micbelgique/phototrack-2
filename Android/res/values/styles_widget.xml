@@ -1,0 +1,22 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <style name="layout_Base">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    
+    <style name="bt_Orange_Light" parent="bt_Colored">
+        <item name="android:background">@drawable/bt_orange_light_selector</item>
+    </style>
+
+    <style name="bt_Orange_Dark" parent="bt_Colored">
+        <item name="android:background">@drawable/bt_orange_dark_selector</item>
+    </style>
+
+    <style name="bt_Colored">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

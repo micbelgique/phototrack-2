@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_Base"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- Create Or Join -->
+
+    <LinearLayout
+        android:id="@+id/layout_CreateOrJoin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bt_Create"
+            style="@style/bt_Orange_Light"
+            android:layout_width="200dp"
+            android:layout_marginBottom="10dp"
+            android:text="Créer" />
+
+        <Button
+            android:id="@+id/bt_Join"
+            style="@style/bt_Orange_Light"
+            android:layout_width="200dp"
+            android:text="Rejoindre" />
+    </LinearLayout>
+
+    <!-- Create -->
+
+    <RelativeLayout
+        android:id="@+id/layout_Create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom du chantier"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_Site"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:inputType="textCapSentences"
+                android:textColorHint="@color/hint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organisation"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_Organization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="textCapSentences"
+                android:textColorHint="@color/hint" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/bt_ValidateCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/bt_validate_selector" />
+    </RelativeLayout>
+
+    <!-- Join -->
+
+    <RelativeLayout
+        android:id="@+id/layout_Join"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrez la clef de partage reçu par votre manager"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_ShareCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="textNoSuggestions"
+                android:textColorHint="@color/hint" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/bt_ValidateJoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/bt_validate_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

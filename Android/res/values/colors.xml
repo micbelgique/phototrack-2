@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="orange">#FF7A24</color>
+    <color name="blue">#4A90E2</color>
+    <color name="grey_Dark">#656565</color>
+    
+    <color name="bt_orange_light">#CB5000</color>
+    <color name="bt_orange_light_pressed">#66300E</color>
+    <color name="bt_orange_dark">#66300E</color>
+    <color name="bt_orange_dark_pressed">#3B1C08</color>
+    
+    <color name="list_divider">#B3B3B3</color>
+    
+    <color name="list_item_background">#FFFFFF</color>
+    <color name="list_item_background_pressed">#EFEFEF</color>
+    
+    <color name="dots_menu_background">#F0F0F0</color>
+    <color name="dots_menu_background_pressed">#DBDBDB</color>
+    
+    <color name="hint">#9B9B9B</color>
+
+</resources>

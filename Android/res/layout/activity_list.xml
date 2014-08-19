@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_Base" >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:divider="@color/list_divider"
+        android:dividerHeight="0.5dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/bt_Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/bt_Create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bt_create_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_Empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/textView_Empty1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Bienvenue !"
+            android:textColor="@color/blue"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView_Empty2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Créez un chantier et ajoutez lui des travaux pour suivre son évolution"
+            android:textColor="@color/blue"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView_Empty"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:src="@drawable/sites_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical|right" >
+
+            <TextView
+                android:id="@+id/textView_Empty3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Créer un nouveau X"
+                android:textColor="@color/blue"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrows" />
+
+            <ImageButton
+                android:id="@+id/bt_Create2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/bt_create_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

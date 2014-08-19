@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">PicWork</string>
+
+     <plurals name="X_works">
+        <item quantity="zero">%1$s travaux</item>
+        <item quantity="one">%1$s travail</item>
+        <item quantity="other">%1$s travaux</item>
+    </plurals>
+    
+    <plurals name="X_pictures">
+        <item quantity="zero">%1$s photos</item>
+        <item quantity="one">%1$s photo</item>
+        <item quantity="other">%1$s photos</item>
+    </plurals>
+
+</resources>

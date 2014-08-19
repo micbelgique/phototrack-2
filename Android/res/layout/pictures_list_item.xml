@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/imageView" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="180dp" -->
+    <!-- android:scaleType="centerCrop" /> -->
+
+    <com.ulteam.phototrack.Activities.Helpers.AsyncImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#AA000000"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:text="Photo description"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
